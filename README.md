@@ -2,6 +2,13 @@ Hướng dẫn cài đặt Squid Proxy trên linux
 Sau khi vps được setup xong thì bạn login vào ssh của vps và thực hiện lần lượt các câu lệnh bên dưới.
 
 1. Cài đặt Squid
+ubuntu
+```
+apt-get update
+```
+```
+apt-get install squid3
+```
 ```
 yum -y install squid
 ```
@@ -38,6 +45,10 @@ service squid restart
 ```
 
 5. Mở firewall:
+ubuntu
+```
+apt install firewalld
+```
 ```
 firewall-cmd --permanent --add-port=xxx/tcp
 ```
